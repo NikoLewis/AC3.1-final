@@ -280,7 +280,31 @@ palindrome('airplane')
 
 
 
+function anagram(str1, str2, obj1 = {}){
 
+
+   if(str1.length != str2.length){
+     return false
+   }
+
+   for(var i = 0; i < str1.length; i++){
+     if(!obj1[str1[i]]){
+       obj1[str1[i]] = 1
+     }
+
+  }
+   for(var j = 0; j < str2.length; j++){
+
+    if(!obj1[str2[i]]){
+       return false
+     }
+
+   }
+
+  return true;
+ }
+ anagram('cat', 'acttt');//false
+ //checked on repl https://repl.it/FNWY/1
 
 
 
