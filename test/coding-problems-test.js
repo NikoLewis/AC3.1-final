@@ -1,5 +1,22 @@
-const {expect, assert} = require('chai');
-const {sumArray, sumAll, squaredTimesTen, highLow, halfsies, indexMap, oddNumStrs, leet, oddsAndEvens, palindrome, anagram, Song, Album} = require('../coding-problems');
+// const {expect, assert} = require('chai');
+const expect = require('chai').expect;
+const assert = require('chai').assert;
+// const {sumArray, sumAll, squaredTimesTen, highLow, halfsies, indexMap, oddNumStrs, leet, oddsAndEvens, palindrome, anagram, Song, Album} = require('../coding-problems');
+const sumArray = require('../coding-problems').sumArray;
+const sumAll = require('../coding-problems').sumAll;
+const squaredTimesTen = require('../coding-problems').squaredTimesTen;
+const highLow = require('../coding-problems').highLow;
+const indexMap = require('../coding-problems').indexMap;
+const oddNumStrs = require('../coding-problems').oddNumStrs;
+const changeBearPig = require('../coding-problems').changeBearPig;
+// const halfsies = require('../coding-problems').halfsies;
+const leet = require('../coding-problems').leet;
+const Song = require('../coding-problems').Song;
+const Album = require('../coding-problems').Album;
+const oddsAndEvens = require('../coding-problems').oddsAndEvens;
+const palindrome = require('../coding-problems').palindrome;
+const anagram = require('../coding-problems').anagram;
+
 
 describe('JavaScript fundamentals final:', () => {
   it('sumArray()', () => {
@@ -47,12 +64,12 @@ describe('JavaScript fundamentals final:', () => {
     expect(test2).eql(['goodbye', 'cya']);
   });
   it('halfsies() ', () => {
-    var test1 = halfsies([100, 100, 100, 100]);
+    var test1 = halfsies([10, 10, 2, 2]);
     var test2 = halfsies([50, 40, 33, 6, 12]);
-    var test3 = halfsies([-10, 33, 10]);
-    expect(test1).eql([10, 10, 1000, 1000]);
-    expect(test2).eql([50, 40, 33, 6, 12]);
-    expect(test3).eql([-100, 33, 100]);
+    var test3 = halfsies([100, 33, 10]);
+    expect(test1).eql([1, 1, 20, 20]);
+    expect(test2).eql([5, 4, 33, 60, 120]);
+    expect(test3).eql([10, 33, 100]);
   });
   it('leet() ', () => {
     var test1 = leet('leet test');
